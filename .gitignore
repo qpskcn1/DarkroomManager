@@ -1,2 +1,7 @@
-# Dependency directories
-node_modules/
+node_modules
+.thumb-cache
+dist
+*.log
+
+.env
+.env.local

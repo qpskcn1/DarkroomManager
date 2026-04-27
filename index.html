@@ -1,105 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darkroom Manager - Film EXIF Automator</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body class="dark-mode">
-    <div class="app-container">
-        <!-- Sidebar -->
-        <aside class="sidebar glass">
-            <div class="brand">
-                <h1>Darkroom Manager</h1>
-                <p>Film Photo EXIF Automator</p>
-            </div>
-            
-            <div class="control-group">
-                <label for="folder-path">Source Directory</label>
-                <input type="text" id="folder-path" placeholder="/path/to/your/scans" value="">
-                <button id="btn-scan" class="btn-primary">Scan Directory</button>
-            </div>
-
-            <div class="control-group">
-                <label for="preset-select">Load Preset</label>
-                <select id="preset-select">
-                    <option value="">Select a preset...</option>
-                    <option value="leica-m6-gold">Leica M6 + 35mm + Kodak Gold</option>
-                    <option value="hasselblad-500cm-portra">Hasselblad 500C/M + 80mm + Portra 400</option>
-                </select>
-            </div>
-
-            <hr class="divider">
-
-            <div class="metadata-editor">
-                <h3>Metadata Editor</h3>
-                
-                <div class="field">
-                    <label for="meta-make">Camera Make</label>
-                    <input type="text" id="meta-make" placeholder="e.g. Leica">
-                </div>
-                
-                <div class="field">
-                    <label for="meta-model">Camera Model</label>
-                    <input type="text" id="meta-model" placeholder="e.g. M6">
-                </div>
-                
-                <div class="field">
-                    <label for="meta-lens">Lens</label>
-                    <input type="text" id="meta-lens" placeholder="e.g. 35mm f/2 Summicron">
-                </div>
-
-                <div class="field">
-                    <label for="meta-film">Film Stock</label>
-                    <input type="text" id="meta-film" placeholder="e.g. Kodak Gold 200">
-                </div>
-
-                <div class="field">
-                    <label for="meta-date">Date</label>
-                    <input type="date" id="meta-date">
-                </div>
-
-                <div class="field-row">
-                    <div class="field">
-                        <label for="meta-aperture">Aperture</label>
-                        <input type="text" id="meta-aperture" placeholder="f/8">
-                    </div>
-                    <div class="field">
-                        <label for="meta-shutter">Shutter</label>
-                        <input type="text" id="meta-shutter" placeholder="1/125">
-                    </div>
-                </div>
-
-                <button id="btn-apply" class="btn-success btn-large">Apply to Selected</button>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <header class="top-bar glass">
-                <div class="selection-info">
-                    <span id="selected-count">0</span> photos selected
-                </div>
-                <div class="actions">
-                    <button id="btn-select-all" class="btn-secondary">Select All</button>
-                    <button id="btn-clear-selection" class="btn-secondary">Clear Selection</button>
-                </div>
-            </header>
-
-            <div class="photo-grid" id="photo-grid">
-                <!-- Photos will be loaded here -->
-                <div class="empty-state">
-                    <p>Enter a directory path and click Scan to load photos.</p>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DarkroomManager — Film EXIF Automator</title>
+    <meta name="description" content="Automate EXIF metadata tagging for scanned film photos. Batch process rolls with camera presets, film stock info, and smart date grouping." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
