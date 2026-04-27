@@ -1,0 +1,18 @@
+{
+  "name": "Leica MP 35 1.4",
+  "data": {
+    "developedAt": "Lab",
+    "filmFormatSize": 1,
+    "focalLength": "35mm",
+    "make": "Leica",
+    "model": "MP",
+    "lens": "35MM F1.4 Summilux Pre-Asph II",
+    "lensMake": "Leica",
+    "scanner": "Noritsu HS-1800",
+    "scanMethod": "Lab Scan"
+  },
+  "make": "Leica",
+  "model": "MP",
+  "lens": "35MM F1.4 Summilux Pre-Asph II",
+  "film": ""
+}

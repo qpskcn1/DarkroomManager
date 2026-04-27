@@ -1,0 +1,15 @@
+{
+  "name": "Leica MP 352A",
+  "data": {
+    "filmFormatSize": 1,
+    "focalLength": "35mm",
+    "make": "Leica",
+    "model": "MP",
+    "lens": "35mm f/2 Summicron ASPH",
+    "lensMake": "Leica"
+  },
+  "make": "Leica",
+  "model": "MP",
+  "lens": "35mm f/2 Summicron ASPH",
+  "film": ""
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Canon EOS 5",
+  "data": {
+    "aperture": "",
+    "nlpDateTaken": "",
+    "filmFormatSize": 1,
+    "nlpFilmISO": "",
+    "filmStock": "",
+    "focalLength": "50mm",
+    "make": "Canon",
+    "model": "EOS 5",
+    "lens": "EF 50mm f/1.8",
+    "lensMake": "Canon",
+    "scanner": "Noritsu HS-1800",
+    "scanMethod": "Lab Scan",
+    "iso": ""
+  },
+  "make": "Canon",
+  "model": "EOS 5",
+  "lens": "EF 50mm f/1.8",
+  "film": ""
+}

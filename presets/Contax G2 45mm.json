@@ -1,0 +1,20 @@
+{
+  "name": "Contax G2 45mm",
+  "data": {
+    "filmFormatSize": 1,
+    "nlpFilmISO": 200,
+    "filmStock": "Kodak Gold 200",
+    "focalLength": "28mm",
+    "make": "Contax",
+    "model": "G2",
+    "lens": "G Mount 28mm F/2.8 Biogon",
+    "lensMake": "Carl Zeiss ",
+    "scanner": "Noritsu HS-1800",
+    "scanMethod": "Lab Scan",
+    "iso": 200
+  },
+  "make": "Contax",
+  "model": "G2",
+  "lens": "G Mount 28mm F/2.8 Biogon",
+  "film": "Kodak Gold 200"
+}

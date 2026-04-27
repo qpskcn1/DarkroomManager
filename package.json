@@ -1,0 +1,14 @@
+{
+  "name": "darkroom-manager",
+  "version": "1.0.0",
+  "description": "Automate EXIF metadata for scanned film photos",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "exiftool-vendored": "^29.2.0"
+  }
+}

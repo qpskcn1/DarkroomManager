@@ -1,0 +1,18 @@
+{
+  "name": "Leica iiia 50mm",
+  "data": {
+    "developedAt": "Lab",
+    "filmFormatSize": 1,
+    "focalLength": "50mm",
+    "make": "Leica",
+    "model": "iiia",
+    "lens": "50mm F3.5",
+    "lensMake": "Russian",
+    "scanner": "Noritsu HS-1800",
+    "scanMethod": "Lab Scan"
+  },
+  "make": "Leica",
+  "model": "iiia",
+  "lens": "50mm F3.5",
+  "film": ""
+}

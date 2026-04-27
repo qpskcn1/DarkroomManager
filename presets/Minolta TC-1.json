@@ -1,0 +1,18 @@
+{
+  "name": "Minolta TC-1",
+  "data": {
+    "aperture": "f3.5",
+    "filmFormatSize": 1,
+    "focalLength": "28mm",
+    "make": "Minolta",
+    "model": "TC-1",
+    "lens": "G-Rokkor 28mm f/3.5Build-in Lens",
+    "lensMake": "Minolta",
+    "scanner": "Noritsu HS-1800",
+    "scanMethod": "Lab Scan"
+  },
+  "make": "Minolta",
+  "model": "TC-1",
+  "lens": "G-Rokkor 28mm f/3.5Build-in Lens",
+  "film": ""
+}

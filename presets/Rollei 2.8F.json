@@ -1,0 +1,17 @@
+{
+  "name": "Rollei 2.8F",
+  "data": {
+    "filmFormatSize": 0.55,
+    "focalLength": "80mm",
+    "make": "Rollei",
+    "model": "Rolleiflex 2.8F",
+    "lens": "Xenotar 80mm f/2.8",
+    "lensMake": "Schneider",
+    "scanner": "Noritsu HS-1800",
+    "scanMethod": "Lab Scan"
+  },
+  "make": "Rollei",
+  "model": "Rolleiflex 2.8F",
+  "lens": "Xenotar 80mm f/2.8",
+  "film": ""
+}
