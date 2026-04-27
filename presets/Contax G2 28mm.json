@@ -1,17 +1,14 @@
 {
   "name": "Contax G2 28mm",
-  "data": {
-    "filmFormatSize": 1,
-    "focalLength": "28mm",
+  "camera": {
     "make": "Contax",
     "model": "G2",
     "lens": "G Mount 28mm F/2.8 Biogon",
-    "lensMake": "Carl Zeiss ",
-    "scanner": "Noritsu HS-1800",
-    "scanMethod": "Lab Scan"
+    "format": "35mm",
+    "focalLength": "28"
   },
-  "make": "Contax",
-  "model": "G2",
-  "lens": "G Mount 28mm F/2.8 Biogon",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "Noritsu HS-1800"
+  }
 }

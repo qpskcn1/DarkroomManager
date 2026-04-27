@@ -1,17 +1,14 @@
 {
   "name": "Mamiya RZ67",
-  "data": {
-    "filmFormatSize": 0.5,
-    "focalLength": "110mm",
+  "camera": {
     "make": "Mamiya",
     "model": "RZ67 PRO ii",
     "lens": "Sekor Z 110mm F2.8",
-    "lensMake": "Mamiya",
-    "scanner": "Noritsu HS-1800",
-    "scanMethod": "Lab Scan"
+    "format": "120 (6x7)",
+    "focalLength": "110"
   },
-  "make": "Mamiya",
-  "model": "RZ67 PRO ii",
-  "lens": "Sekor Z 110mm F2.8",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "Noritsu HS-1800"
+  }
 }

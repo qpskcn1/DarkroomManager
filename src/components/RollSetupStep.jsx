@@ -13,6 +13,8 @@ export default function RollSetupStep({
   const [batchMode, setBatchMode] = useState(false);
   const [batchRolls, setBatchRolls] = useState(new Set());
   const [filmSearch, setFilmSearch] = useState('');
+  const [expandGallery, setExpandGallery] = useState(false);
+  const [previewPhoto, setPreviewPhoto] = useState(null);
 
   const selectedRoll = rolls.find(r => r.id === selectedRollId);
 
@@ -134,6 +136,38 @@ export default function RollSetupStep({
         <div className="setup-panel">
           {(selectedRoll || (batchMode && batchRolls.size > 0)) ? (
             <>
+              {/* Quick Preview Section */}
+              {!batchMode && selectedRoll && (
+                <section className="setup-section quick-preview">
+                  <div className="preview-header">
+                    <h3 className="section-title">Quick Preview: {selectedRoll.name}</h3>
+                    {selectedRoll.photos.length > 6 && (
+                      <button className="expand-toggle" onClick={() => setExpandGallery(!expandGallery)}>
+                        {expandGallery ? 'Collapse ↑' : `Show All (${selectedRoll.photos.length}) ↓`}
+                      </button>
+                    )}
+                  </div>
+                  <div className={`mini-gallery ${expandGallery ? 'expanded' : ''}`}>
+                    {(expandGallery ? selectedRoll.photos : selectedRoll.photos.slice(0, 6)).map((photo, i) => (
+                      <div 
+                        key={i} 
+                        className="mini-thumb"
+                        onMouseEnter={() => setPreviewPhoto(photo)}
+                        onMouseLeave={() => setPreviewPhoto(null)}
+                      >
+                        <img src={`/api/thumbnail?path=${encodeURIComponent(photo.path)}`} alt="thumb" />
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {previewPhoto && (
+                <div className="photo-large-preview setup-preview">
+                  <img src={`/api/thumbnail?path=${encodeURIComponent(previewPhoto.path)}&size=800`} alt="Preview" />
+                </div>
+              )}
+
               {/* Camera Preset Section */}
               <section className="setup-section">
                 <h3 className="section-title">
@@ -149,10 +183,39 @@ export default function RollSetupStep({
                       className={`preset-card ${selectedRoll?.preset?.name === preset.name ? 'selected' : ''}`}
                       onClick={() => applyPreset(preset)}
                     >
-                      <div className="preset-card-make">{preset.camera?.make || ''}</div>
+                      <div className="preset-card-top">
+                        <div className="preset-card-make">{preset.camera?.make || ''}</div>
+                        <div className="preset-card-format">{preset.camera?.format || '35mm'}</div>
+                      </div>
                       <div className="preset-card-model">{preset.camera?.model || ''}</div>
                       <div className="preset-card-lens">{preset.camera?.lens || ''}</div>
                       <div className="preset-card-scan">{preset.scan?.method || ''}</div>
+                    </button>
+                  ))}
+                </div>
+              </section>
+
+              {/* Film Format Override */}
+              <section className="setup-section">
+                <h3 className="section-title">
+                  Film Format
+                  {selectedRoll?.preset?.camera?.format && (
+                    <span className="section-badge">{selectedRoll.preset.camera.format}</span>
+                  )}
+                </h3>
+                <div className="format-chips">
+                  {['35mm', 'Half Frame', '120 (6x4.5)', '120 (6x6)', '120 (6x7)', '120 (6x9)', '4x5'].map(f => (
+                    <button
+                      key={f}
+                      className={`format-chip ${selectedRoll?.preset?.camera?.format === f ? 'selected' : ''}`}
+                      onClick={() => {
+                        const updatedPreset = { ...selectedRoll.preset };
+                        if (!updatedPreset.camera) updatedPreset.camera = {};
+                        updatedPreset.camera = { ...updatedPreset.camera, format: f };
+                        onUpdateRoll(selectedRollId, { preset: updatedPreset });
+                      }}
+                    >
+                      {f}
                     </button>
                   ))}
                 </div>

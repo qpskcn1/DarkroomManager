@@ -1,17 +1,14 @@
 {
   "name": "Leica MP 35 11870",
-  "data": {
-    "filmFormatSize": 1,
-    "focalLength": "35mm",
+  "camera": {
     "make": "Leica",
     "model": "MP",
     "lens": "35MM F1.4 Summilux Pre-Asph II",
-    "lensMake": "Leica",
-    "scanner": "Noritsu HS-1800",
-    "scanMethod": "Lab Scan"
+    "format": "35mm",
+    "focalLength": ""
   },
-  "make": "Leica",
-  "model": "MP",
-  "lens": "35MM F1.4 Summilux Pre-Asph II",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "Noritsu HS-1800"
+  }
 }

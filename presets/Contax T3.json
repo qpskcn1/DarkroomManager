@@ -1,17 +1,14 @@
 {
   "name": "Contax T3",
-  "data": {
-    "filmFormatSize": 1,
-    "focalLength": "35mm",
+  "camera": {
     "make": "Contax",
     "model": "T3",
     "lens": "Sonnar 2.8/35 T*",
-    "lensMake": "Carl Zeiss",
-    "scanner": "\\\nNoritsu HS-1800",
-    "scanMethod": "Lab Scan"
+    "format": "35mm",
+    "focalLength": ""
   },
-  "make": "Contax",
-  "model": "T3",
-  "lens": "Sonnar 2.8/35 T*",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "\\\nNoritsu HS-1800"
+  }
 }

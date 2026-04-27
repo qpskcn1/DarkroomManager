@@ -1,18 +1,14 @@
 {
   "name": "Mamiya 7ii 80mm Camera Scan",
-  "data": {
-    "developedAt": "Lab",
-    "filmFormatSize": 0.5,
-    "focalLength": "80mm",
+  "camera": {
     "make": "Mamiya",
     "model": "7 ii",
     "lens": "80mm f/4 N L",
-    "lensMake": "Mamiya",
-    "scanner": "Nikon Z7 II",
-    "scanMethod": "Digital Camera Scan"
+    "format": "120 (6x7)",
+    "focalLength": "80"
   },
-  "make": "Mamiya",
-  "model": "7 ii",
-  "lens": "80mm f/4 N L",
-  "film": ""
+  "scan": {
+    "method": "Digital Camera Scan",
+    "scanner": "Nikon Z7 II"
+  }
 }

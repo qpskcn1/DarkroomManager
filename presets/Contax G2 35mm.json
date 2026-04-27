@@ -1,19 +1,14 @@
 {
   "name": "Contax G2 35mm",
-  "data": {
-    "aperture": "f2",
-    "filmFormatSize": 1,
-    "focalLength": "35mm",
+  "camera": {
     "make": "Contax",
     "model": "G2",
     "lens": "T* Planar 35mm F/2 Lens G Mount",
-    "lensMake": "Carl Zeiss",
-    "scanner": "Noritsu HS-1800",
-    "scanMethod": "Lab Scan",
-    "iso": 200
+    "format": "35mm",
+    "focalLength": "35"
   },
-  "make": "Contax",
-  "model": "G2",
-  "lens": "T* Planar 35mm F/2 Lens G Mount",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "Noritsu HS-1800"
+  }
 }

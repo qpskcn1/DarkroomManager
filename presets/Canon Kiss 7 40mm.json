@@ -1,18 +1,14 @@
 {
   "name": "Canon Kiss 7 40mm",
-  "data": {
-    "developedAt": "Lab",
-    "filmFormatSize": 1,
-    "focalLength": "40mm",
+  "camera": {
     "make": "Canon",
     "model": "EOS Kiss 7",
     "lens": "EF 40mm f/2.8",
-    "lensMake": "Canon",
-    "scanner": "Noritsu HS-1800",
-    "scanMethod": "Lab Scan"
+    "format": "35mm",
+    "focalLength": "40"
   },
-  "make": "Canon",
-  "model": "EOS Kiss 7",
-  "lens": "EF 40mm f/2.8",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "Noritsu HS-1800"
+  }
 }

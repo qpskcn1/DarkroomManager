@@ -1,18 +1,14 @@
 {
   "name": "Rolleiflex 2.8F Camera Scan",
-  "data": {
-    "developedAt": "Lab",
-    "filmFormatSize": 0.55,
-    "focalLength": "80mm",
+  "camera": {
     "make": "Rollei",
     "model": "Rolleiflex 2.8F",
     "lens": "Xenotar 80mm f/2.8",
-    "lensMake": "Schneider",
-    "scanner": "Nikon Z7 II",
-    "scanMethod": "Digital Camera Scan"
+    "format": "120 (6x6)",
+    "focalLength": "80"
   },
-  "make": "Rollei",
-  "model": "Rolleiflex 2.8F",
-  "lens": "Xenotar 80mm f/2.8",
-  "film": ""
+  "scan": {
+    "method": "Digital Camera Scan",
+    "scanner": "Nikon Z7 II"
+  }
 }

@@ -15,10 +15,10 @@ const AI_PROVIDER = process.env.AI_PROVIDER || 'gemini';
  * Generate a small base64 thumbnail for AI analysis
  * Keeps tokens/cost low while preserving enough detail for scene understanding
  */
-async function photoToBase64(filePath, size = 512) {
+async function photoToBase64(filePath, size = 320) {
   const buffer = await sharp(filePath)
     .resize(size, size, { fit: 'inside', withoutEnlargement: true })
-    .jpeg({ quality: 75 })
+    .jpeg({ quality: 45 })
     .toBuffer();
   return buffer.toString('base64');
 }
@@ -85,7 +85,7 @@ async function analyzeWithGemini(photoBase64Array, prompt) {
 
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ 
-    model: 'gemini-2.0-flash',
+    model: 'gemini-3.1-flash-lite-preview',
     generationConfig: {
       responseMimeType: 'application/json',
       temperature: 0.3,
@@ -115,7 +115,7 @@ async function analyzeWithGemini(photoBase64Array, prompt) {
     // Re-init with proxy support
     const genAIProxy = new GoogleGenerativeAI(apiKey);
     const modelProxy = genAIProxy.getGenerativeModel({ 
-      model: 'gemini-2.0-flash',
+      model: 'gemini-3.1-flash-lite-preview',
       generationConfig: {
         responseMimeType: 'application/json',
         temperature: 0.3,

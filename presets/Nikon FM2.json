@@ -1,17 +1,14 @@
 {
   "name": "Nikon FM2",
-  "data": {
-    "filmFormatSize": 1,
-    "focalLength": "50mm",
+  "camera": {
     "make": "Nikon",
     "model": "FM2",
     "lens": "NIKKOR 50mm F/1.4",
-    "lensMake": "Nikon",
-    "scanner": "Noritsu HS-1800",
-    "scanMethod": "Lab Scan"
+    "format": "35mm",
+    "focalLength": "50"
   },
-  "make": "Nikon",
-  "model": "FM2",
-  "lens": "NIKKOR 50mm F/1.4",
-  "film": ""
+  "scan": {
+    "method": "Lab Scan",
+    "scanner": "Noritsu HS-1800"
+  }
 }
